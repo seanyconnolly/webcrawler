@@ -125,7 +125,7 @@ public class Crawler {
             logger.info("*************** SUCCESS *********************");
             logger.info("All links visited, Total : " + this.visitedLinks.size());
         }
-        
+
         if (checkIfVisitedIsInUnvisited()) {
             logger.warn("Unvisited has Visited links!");
         }
