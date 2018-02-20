@@ -76,6 +76,12 @@ public class Crawler {
     }
 
 
+    /**
+     * Crawling Rules
+     *
+     * @param link scrapped from site
+     * @return true if link string passes rules
+     */
     private boolean shouldCrawlLink(String link) {
         boolean ans = false;
         if (!this.unVisitedLinks.contains(link) &&
@@ -118,11 +124,8 @@ public class Crawler {
         if (this.unVisitedLinks.size() == 0) {
             logger.info("*************** SUCCESS *********************");
             logger.info("All links visited, Total : " + this.visitedLinks.size());
-
-
         }
-
-
+        
         if (checkIfVisitedIsInUnvisited()) {
             logger.warn("Unvisited has Visited links!");
         }
