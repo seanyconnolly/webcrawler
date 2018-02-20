@@ -9,8 +9,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class WebcrawlerApplicationTests {
 
-	@Test
-	public void testGym() {
-	}
+//	@Test
+//	public void testGym() {
+//	}
 
 }
