@@ -14,19 +14,16 @@ fi
 
 echo "running crawler at  $domain "
 
-
 echo "building carwler"
 ./mvnw clean package -DskipTests
-
-
 
 java -jar target/webcrawler-0.0.1-SNAPSHOT.jar ${domain}
 
 echo "crawler finished!"
 
-cat sitemap.txt
-
-if [ ${USER} = "ubuntu" ]; then
+if [ ${HOSTNAME} = "ip-10-10-208-213" ]; then
     cp sitemap.txt /var/www/html/sitemap.txt
     echo "map available @ http://crawler.shaneconnolly.io/sitemap.txt"
+else
+    cat sitemap.txt
 fi
