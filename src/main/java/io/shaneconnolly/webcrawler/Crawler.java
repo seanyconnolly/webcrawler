@@ -47,11 +47,12 @@ public class Crawler {
         while (this.unVisitedLinks.size() > 0 && this.visitedLinks.size() < MAX_PAGES_TO_LOAD) {
             String url = this.unVisitedLinks.remove(0);
 
+
             if (!this.visitedLinks.contains(url)) {
                 this.visitedLinks.add(url);
                 try {
                     writeSiteMap(this.visitedLinks.size() + " : " + url);
-
+                    logger.info("crawling page ::: " + this.visitedLinks.size() + " : " + url);
                     Document document = Jsoup.connect(url)
                             .userAgent(AGENT)
                             .referrer(REFERER)
