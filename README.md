@@ -19,7 +19,7 @@ to crawl any other site
 
 also if you don't have java or linux based system 
 
-###you can ssh to ubuntu@crawler.shaneconnolly.io
+### you can ssh to ubuntu@crawler.shaneconnolly.io
 with the private key shared in email 
 
 follow the terminal instructions then.
