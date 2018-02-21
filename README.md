@@ -11,7 +11,7 @@ theres a small site added in script by default
 
 to crawl any other site
 
-####java -jar target/webcrawler-0.0.1-SNAPSHOT.jar SITE_URL
+#### java -jar target/webcrawler-0.0.1-SNAPSHOT.jar SITE_URL
 
 #### Results are in sitemap.txt
 
@@ -26,7 +26,7 @@ follow the terminal instructions then.
 
 
 
-##Logic:
+## Logic:
 
 - get all links from domain given
 - add domain to set of visited links
